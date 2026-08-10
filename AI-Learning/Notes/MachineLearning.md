@@ -41,3 +41,20 @@ The model can have multiple inputs, not just one input. For example: Tumor size 
 - What are "right answers"?
 - How does the algorithm finds the best fitting function/boundary line?
 - When having multiple inputs, is it easier or harder to train the model?
+
+# 3. Unsupervised Learning
+
+## 3.1 What I understood
+
+In Unsupervised Learning we give the algorithm the inputs X, but don't give the labels Y.
+
+3 types of Unsupervised Learning:
+**Clustering** - The algorithm tries to find some structure/some pattern in the dataset so it can group them together into groups/clusters. Example: DNA micro array
+**Anomaly detection** - Example: Fraud detection
+**Dimensionality reduction** - Example: Shrink data without losing too much information
+
+## 3.2 Questions
+
+- What is Anomaly detection?
+- What is Dimensionality reduction?
+- How the algorithm groups data into groups/cluster? How it decides whether or not it belongs to group 1 or group 2?

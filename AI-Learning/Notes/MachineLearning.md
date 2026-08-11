@@ -17,6 +17,10 @@ Machine Learning is the ability of PC/Algorighm solve a problem without being pr
 - Why more examples gives better outcome?
 - What is Supervised and Unsupervised Learning and its usage/application in real life
 
+
+
+
+
 # 2. Supervised Learning
 
 ## 2.1 What I understood
@@ -42,6 +46,10 @@ The model can have multiple inputs, not just one input. For example: Tumor size 
 - How does the algorithm finds the best fitting function/boundary line?
 - When having multiple inputs, is it easier or harder to train the model?
 
+
+
+
+
 # 3. Unsupervised Learning
 
 ## 3.1 What I understood
@@ -58,3 +66,29 @@ In Unsupervised Learning we give the algorithm the inputs X, but don't give the 
 - What is Anomaly detection?
 - What is Dimensionality reduction?
 - How the algorithm groups data into groups/cluster? How it decides whether or not it belongs to group 1 or group 2?
+
+
+
+
+
+# 4. Linear regression model
+
+## 4.1 What I understood
+
+Linear regression model is a regression model which is Supervised Learning model. We give the model our data called "Training set", the model learns on this "Training set"
+and then predicts a number on a new input.
+
+The inputs is denoted as 'x' (called input, input feature) and the output target is denoted as 'y' (called output target).
+The model's estimate/prediction is denoted as y-hat (called estimate/prediction). The 'm' denotes the number of training examples.
+The (x, y) denotes single training example.
+
+So the model takes Training set and pass it to learning algorithm called a function 'f'. Linear regression model uses a straight line or a linear function to fit 
+the data. The function 'f' (called model) takes the input x (called feature) and returns an estimate/prediction denoted as y-hat.
+Function for Linear regression is: f(x) = wx + b, where x is input feature and w,b are other variables.
+This is example of Univariate Linear Regression or Linear Regression with one variable (one input feature).
+
+## 4.2 Questions
+
+- How the model actually trains on the training set?
+- What are "variables" w and b?
+- What is the function for Linear Regression with multiple variables (more input features)?

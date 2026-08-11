@@ -18,6 +18,10 @@ Week 1 - What is machine learning?
 - Why more data results in better outcome?
 - What is the difference between Supervised and Unsupervised Learning?
 
+
+
+
+
 # 2026-08-10
 
 ## I was learning
@@ -41,3 +45,27 @@ Week 1 - Unsupervised Learning part 1 and part 2
 - Is it easier/harder for model to learn when having multiple inputs?
 - What is Anomaly detection and Dimensionality reduction
 - How the algorithm whether or not the input X belongs to that or that group?
+
+
+
+
+
+# 2026-08-10
+
+## I was learning
+
+Andrew Ng - Machine Learning Specialization
+Supervised Machine Learning: Regression and Classification
+Week 1 - Linear regression model part 1 and part 2
+
+## I understood
+
+- The idea behind the Linear Regression model
+- Basic notation: x = input features, y = output targets, y-hat = estimates/predictions, m = number of training examples, (x, y) = Single training example
+- Function f(x) = wx + b, although don't know what w,b is
+
+## What I did not understand?
+
+- How the model trains or how it improves its performance
+- What are "variables" w and b
+- What is the function for Linear regression with multiple variables

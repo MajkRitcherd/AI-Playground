@@ -50,7 +50,7 @@ Week 1 - Unsupervised Learning part 1 and part 2
 
 
 
-# 2026-08-10
+# 2026-08-11
 
 ## I was learning
 
@@ -69,3 +69,30 @@ Week 1 - Linear regression model part 1 and part 2
 - How the model trains or how it improves its performance
 - What are "variables" w and b
 - What is the function for Linear regression with multiple variables
+
+
+
+
+
+# 2026-08-12
+
+## I was learning
+
+Andrew Ng - Machine Learning Specialization
+Supervised Machine Learning: Regression and Classification
+Week 1 - Cost function formula
+
+## I understood
+
+- Cost function measures how well the model's predictions fit the training set.
+- For linear regression, we can use squared error cost.
+- Larger errors contribute disproportionately more to the cost.
+- J(w,b) depends on the model parameters w and b.
+- 1/m prevents the cost from growing simply because the training set is larger.
+- 1/2 is mainly a mathematical convenience for later derivatives.
+
+## What I did not understand?
+
+- How does the model choose better values of w and b?
+- How can we know which direction w and b should move?
+- How does Gradient Descent use J(w,b)?

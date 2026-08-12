@@ -79,11 +79,11 @@ Linear regression model is a regression model which is Supervised Learning model
 and then predicts a number on a new input.
 
 The inputs is denoted as 'x' (called input, input feature) and the output target is denoted as 'y' (called output target).
-The model's estimate/prediction is denoted as y-hat (called estimate/prediction). The 'm' denotes the number of training examples.
+The model's estimate/prediction is denoted as ŷ (y-hat) called estimate/prediction. The 'm' denotes the number of training examples.
 The (x, y) denotes single training example.
 
 So the model takes Training set and pass it to learning algorithm called a function 'f'. Linear regression model uses a straight line or a linear function to fit 
-the data. The function 'f' (called model) takes the input x (called feature) and returns an estimate/prediction denoted as y-hat.
+the data. The function 'f' (called model) takes the input x (called feature) and returns an estimate/prediction denoted as 'ŷ' (y-hat).
 Function for Linear regression is: f(x) = wx + b, where x is input feature and w,b are other variables.
 This is example of Univariate Linear Regression or Linear Regression with one variable (one input feature).
 
@@ -92,3 +92,33 @@ This is example of Univariate Linear Regression or Linear Regression with one va
 - How the model actually trains on the training set?
 - What are "variables" w and b?
 - What is the function for Linear Regression with multiple variables (more input features)?
+
+
+
+
+
+# 5. Cost function
+
+## 5.1 What I understood
+
+Recall the model is $f(x) = wx + b$, where $w,b$ are parameters (called weights, coefficients).
+These parameters are variables that the model can adjust during training to get better results.
+The parameter '$w$' affects the slope of a line and the parameter '$b$' offsets the line on the vertical axis Y.
+
+The cost function will tell us how well the model is doing on the training set
+so we can try to do it better overtime.
+
+The cost function is used to measure how bad/good model's predictions are.
+For cost function we need to measure an error, meaning measure what's the difference between model's prediction $ŷ$ and the output target $y$. 
+The error is measured simply by $(ŷ^{(i)} - y^{(i)})^2$ = $(f_{w,b}(x^{(i)}) - y^{(i)})^2$. By using to the power of 2, the model gets more punishment for errors.
+We need to sum up all the errors for each individual training example. Due to this, the error will get bigger with the size of the training set. To avoid that, we need to divide it by $\frac{1}{m}$. Using '2m' in $\frac{1}{2m}$ is just for easier work with the function and it does not change its behaviour.
+The cost function is denoted as $J(w,b)$
+
+So the Squared error cost function is: $J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2$
+
+## 5.2 Questions
+
+- How the model adjust the parameters $'w'$ and $'b'$?
+- How the model works with the cost function to adjust its parameters?
+- Exists other types of Cost function?
+- Why is squared error cost function a good choice for many Regression problems?

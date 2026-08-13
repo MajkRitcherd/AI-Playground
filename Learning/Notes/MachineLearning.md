@@ -116,6 +116,28 @@ The cost function is denoted as $J(w,b)$
 
 So the Squared error cost function is: $J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2$
 
+Recall the model is: $$f_{w,b}(x) = wx + b$$
+Parameters: $$w,b$$ 
+Cost function: $$J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2$$
+Goal: $$minimize_{w,b}J(w,b)$$
+
+The intuition behind the cost function is to tell us how well the model is doing on the training set.
+
+The parameters $w$ and $b$ determine the model's predictions. Changing w and b changes the predictions, which changes the cost $J(w,b)$.
+
+Our goal is to find values of $w$ and $b$ that minimize $J(w,b)$:
+
+$$
+\min_{w,b} J(w,b)
+$$
+
+The minimum of the cost function represents the best values of the parameters according to the chosen cost function.
+
+For linear regression with squared error, the cost function has a
+convex shape. With one parameter varying, it can be visualized as a
+parabola. With both $w$ and $b$ varying, it can be visualized as a 3D
+surface.
+
 ## 5.2 Questions
 
 - How the model adjust the parameters $'w'$ and $'b'$?

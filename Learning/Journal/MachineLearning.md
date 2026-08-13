@@ -96,3 +96,26 @@ Week 1 - Cost function formula
 - How does the model choose better values of w and b?
 - How can we know which direction w and b should move?
 - How does Gradient Descent use J(w,b)?
+
+
+
+
+
+# 2026-08-12
+
+## I was learning
+
+Andrew Ng - Machine Learning Specialization
+Supervised Machine Learning: Regression and Classification
+Week 1 - Cost function intuition
+
+## I understood
+
+- Intuition behind the Cost Function
+- For model with one variable, the Cost Function can be visualized as parabola
+
+## What I did not understand?
+
+- How does the model choose better values of w and b?
+- How can we know which direction w and b should move?
+- How does Gradient Descent use J(w,b)?

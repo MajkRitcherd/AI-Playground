@@ -1,0 +1,6 @@
+@AI_Playground.Web_HostAddress = http://localhost:5166
+
+GET {{AI_Playground.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

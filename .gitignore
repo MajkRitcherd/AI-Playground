@@ -1,0 +1,16 @@
+## Core .NET Build Artifacts
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+## IDE and Tools
+.vs/
+.vscode/
+.idea/
+*.user
+
+## Development
+appsettings.Development.json
+.env
+logs/

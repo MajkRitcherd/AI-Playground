@@ -136,7 +136,7 @@ The minimum of the cost function represents the best values of the parameters ac
 For linear regression with squared error, the cost function has a
 convex shape. With one parameter varying, it can be visualized as a
 parabola. With both $w$ and $b$ varying, it can be visualized as a 3D
-surface.
+surface (as a bowl). We can also use Contour plot to visualize the Cost Function $J(w,b)$.
 
 ## 5.2 Questions
 
@@ -144,3 +144,4 @@ surface.
 - How the model works with the cost function to adjust its parameters?
 - Exists other types of Cost function?
 - Why is squared error cost function a good choice for many Regression problems?
+- How does it look for more comples Cost Functions $J$ (more than 2 parameters)?

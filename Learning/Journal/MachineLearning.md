@@ -101,7 +101,7 @@ Week 1 - Cost function formula
 
 
 
-# 2026-08-12
+# 2026-08-13
 
 ## I was learning
 
@@ -119,3 +119,27 @@ Week 1 - Cost function intuition
 - How does the model choose better values of w and b?
 - How can we know which direction w and b should move?
 - How does Gradient Descent use J(w,b)?
+
+
+
+
+
+# 2026-08-14
+
+## I was learning
+
+Andrew Ng - Machine Learning Specialization
+Supervised Machine Learning: Regression and Classification
+Week 1 - Visualizing the cost function
+
+## I understood
+
+- 2 different visualizations:
+  - When Cost Function $J$ has only 1 parameter, such as $w$, visualization of Cost Function $J(w)$ looks like a Parabola
+  - When Cost Function $J$ has 2 parameters, such as $w,b$, visualization of Cost Function $J(w,b)$ looks like a bowl
+- We can use Contour plots for visualization
+
+
+## What I did not understand?
+
+- How does it look for more comples Cost Functions $J$ (more than 2 parameters)?

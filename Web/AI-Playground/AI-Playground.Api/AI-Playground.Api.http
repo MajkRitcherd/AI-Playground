@@ -1,0 +1,9 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseUrl = https://localhost:7052
+
+### Test
+GET {{baseUrl}}/api/learning/test
+
+### Test name
+GET {{baseUrl}}/api/learning/test?name=Michal

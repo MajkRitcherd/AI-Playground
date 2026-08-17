@@ -1,4 +1,4 @@
-﻿namespace AI_Playground.Web.Endpoints
+﻿namespace AI_Playground.Web.Features.Learning
 {
     public static class LearningEndpoints
     {

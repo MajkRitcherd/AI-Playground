@@ -1,4 +1,4 @@
-using AI_Playground.Web.Endpoints;
+using AI_Playground.Web.Features.Learning;
 
 var builder = WebApplication.CreateBuilder(args);
 

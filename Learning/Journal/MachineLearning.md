@@ -143,3 +143,19 @@ Week 1 - Visualizing the cost function
 ## What I did not understand?
 
 - How does it look for more comples Cost Functions $J$ (more than 2 parameters)?
+
+
+
+
+
+# 2026-08-17
+
+## I was learning
+
+Andrew Ng - Machine Learning Specialization
+Supervised Machine Learning: Regression and Classification
+Week 1 - Visualization examples
+
+## I understood
+
+- How changing $w,b$ changes the Cost Function $J$ and its visualization using contour plot and 3D plot.

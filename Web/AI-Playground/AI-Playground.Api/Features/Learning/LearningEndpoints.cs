@@ -1,4 +1,5 @@
 ﻿using AI_Playground.Web.Features.Learning.LearningTree;
+using AI_Playground.Web.Features.Learning.Markdown;
 
 namespace AI_Playground.Web.Features.Learning
 {
@@ -9,6 +10,7 @@ namespace AI_Playground.Web.Features.Learning
             var group = builder.MapGroup("/api/learning");
 
             LearningTreeEndpoints.MapLearningTreeEndpoints(group);
+            MarkdownEndpoints.MapMarkdownEndpoints(group);
 
             return group;
         }

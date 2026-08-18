@@ -1,5 +1,6 @@
 using AI_Playground.Web.Features.Learning;
 using AI_Playground.Web.Features.Learning.LearningTree;
+using AI_Playground.Web.Features.Learning.Markdown;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,7 @@ var basePath = Path.GetFullPath(
 builder.Services.AddOpenApi();
 builder.Services.AddSingleton(new LearningDirectory(basePath));
 builder.Services.AddSingleton<LearningTreeReader>();
+builder.Services.AddSingleton<MarkdownReader>();
 
 var app = builder.Build();
 

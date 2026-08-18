@@ -4,3 +4,6 @@
 
 ### Learning tree (Get all markdown files in the Learning direcotry).
 GET {{baseUrl}}/api/learning/tree
+
+### Get markdown content
+GET {{baseUrl}}/api/learning/content/Notes/MachineLearning.md

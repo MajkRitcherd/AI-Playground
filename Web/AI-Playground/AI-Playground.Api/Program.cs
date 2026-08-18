@@ -1,4 +1,5 @@
 using AI_Playground.Web.Features.Learning;
+using AI_Playground.Web.Features.Learning.LearningTree;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddSingleton<LearningTreeReader>();
 
 var app = builder.Build();
 

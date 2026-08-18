@@ -13,4 +13,6 @@ namespace AI_Playground.Web.Features.Learning
             return group;
         }
     }
+
+    public sealed record LearningDirectory(string Path);
 }

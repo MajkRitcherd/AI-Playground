@@ -3,10 +3,18 @@ using AI_Playground.Web.Features.Learning.LearningTree;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+var learningPath = builder.Configuration["LearningPath"]
+    ?? throw new InvalidOperationException("Configuration 'LearningPath' is missing.");
 
+var basePath = Path.GetFullPath(
+    Path.Combine(
+        builder.Environment.ContentRootPath,
+        learningPath));
+
+// Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddSingleton(new LearningDirectory(basePath));
 builder.Services.AddSingleton<LearningTreeReader>();
 
 var app = builder.Build();

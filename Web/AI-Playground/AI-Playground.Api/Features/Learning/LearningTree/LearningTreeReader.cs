@@ -1,17 +1,8 @@
 ﻿namespace AI_Playground.Web.Features.Learning.LearningTree
 {
-    public sealed class LearningTreeReader
+    public sealed class LearningTreeReader(LearningDirectory directory)
     {
-        private readonly string _basePath;
-
-        public LearningTreeReader(IConfiguration configuration, IHostEnvironment hostEnvironment)
-        {
-            var learningPath = configuration["LearningPath"]
-                ?? throw new KeyNotFoundException("'LearningPath' is not configured.");
-
-            _basePath = Path.GetFullPath(
-                Path.Combine(hostEnvironment.ContentRootPath, learningPath));
-        }
+        private readonly string _basePath = directory.Path;
 
         public LearningNodeDTO Read()
         {

@@ -10,13 +10,12 @@
 
                 return result.Status switch
                 {
-                    MarkdownReadStatus.Success => Results.Text(result.Content, "text/markdown"),
-                    MarkdownReadStatus.NotFound => Results.NotFound(),
+                    MarkdownReadStatus.Success     => Results.Text(result.Content, "text/markdown"),
+                    MarkdownReadStatus.NotFound    => Results.NotFound(),
                     MarkdownReadStatus.InvalidPath => Results.NotFound(),
                     MarkdownReadStatus.NotMarkdown => Results.NotFound(),
-                    MarkdownReadStatus.Error => Results.NotFound(),
+                    MarkdownReadStatus.Error       => Results.NotFound(),
                     _ => Results.Problem()
-
                 };
             });
         }

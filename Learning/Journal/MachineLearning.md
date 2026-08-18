@@ -159,3 +159,21 @@ Week 1 - Visualization examples
 ## I understood
 
 - How changing $w,b$ changes the Cost Function $J$ and its visualization using contour plot and 3D plot.
+
+
+
+
+
+# 2026-08-18
+
+## I was learning
+
+Andrew Ng - Machine Learning Specialization
+Supervised Machine Learning: Regression and Classification
+Week 1 - Gradient descent
+
+## I understood
+
+- The intuition behind the Gradient Descent algorithm
+- How Gradient Descent works (not mathematically)
+- Its interesting properties (local minimums)

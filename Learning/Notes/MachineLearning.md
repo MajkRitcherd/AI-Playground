@@ -145,3 +145,23 @@ surface (as a bowl). We can also use Contour plot to visualize the Cost Function
 - Exists other types of Cost function?
 - Why is squared error cost function a good choice for many Regression problems?
 - How does it look for more comples Cost Functions $J$ (more than 2 parameters)?
+
+
+
+
+
+# 6. Gradient descent
+
+## 6.1 What I understood
+
+To minimize Cost function $J$, we use algorithm called Gradient Descent. This algorithm can minimize any Cost Function $J(w_{1}, ..., w_{n}, b)$.
+
+The algorithm works this way: We start at a random point (In Linear Regresion we can set $w, b$ to 0). We look around and take the step with the steepest descent. After the step, we look around again and take another step with steepest descent and we repeat this process until we find minimum.
+
+Linear Regression with Squared Error Cost Function have always 1 minimum because Cost Function $J(w,b)$ is a parabola. Other Cost Functions $J(w_{1}, ..., w_{n}, b)$ can have multiple minimums and the Gradient Descent can end up in one of its local minimum. By starting at different starting position, the Gradient descent algorithm can end up in a different local minimum.
+
+## 6.2 Questions
+
+- How complex can Cost Function be?
+- How many local minimums can Cost Function have?
+- Can we find the global minimum using the Gradient descent algorithm or can we find the best local minimum?

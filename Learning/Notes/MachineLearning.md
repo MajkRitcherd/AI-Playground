@@ -160,8 +160,31 @@ The algorithm works this way: We start at a random point (In Linear Regresion we
 
 Linear Regression with Squared Error Cost Function have always 1 minimum because Cost Function $J(w,b)$ is a parabola. Other Cost Functions $J(w_{1}, ..., w_{n}, b)$ can have multiple minimums and the Gradient Descent can end up in one of its local minimum. By starting at different starting position, the Gradient descent algorithm can end up in a different local minimum.
 
+Gradient descent algorithm works like this: On each step, simultaneously update parameters $w, b$.
+The parameter $w$ is updated as $w = w - \alpha \frac{\partial J(w, b)}{\partial w}$
+​The parameter $b$ is updated as $b = b - \alpha \frac{\partial J(w, b)}{\partial b}$
+
+The $\alpha$ is called learning rate and it determines how big step the gradient descent takes.
+The $\frac{\partial J(w, b)}{\partial w}$ or $\frac{\partial J(w, b)}{\partial b}$ is called a derivative determines in what direction to take the step.
+
+Correct simultaneous update algorithm:
+1. $tmp_w = w - \alpha \frac{\partial J(w, b)}{\partial w}$
+2. $tmp_b = b - \alpha \frac{\partial J(w, b)}{\partial b}$
+3. $w = tmp_w$
+4. $b = tmp_b$
+
+Incorrect simultaneous update algorithm:
+1. $tmp_w = w - \alpha \frac{\partial J(w, b)}{\partial w}$
+3. $w = tmp_w$
+2. $tmp_b = b - \alpha \frac{\partial J(w, b)}{\partial b}$ ($w$ has already been updated to a new value)
+4. $b = tmp_b$
+This incorrect simultaneous update algorithm will work more or less the same as the correct one. Altought this is another algorithm with different properties than Gradient Descent
+
 ## 6.2 Questions
 
 - How complex can Cost Function be?
 - How many local minimums can Cost Function have?
 - Can we find the global minimum using the Gradient descent algorithm or can we find the best local minimum?
+- Why do we need to compute derivative of $J$?
+- How do I choose optimal Learning rate $\alpha$?
+- What is the other algorithm with different properties when we use incorrect simultaneous update? 

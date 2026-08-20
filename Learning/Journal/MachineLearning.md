@@ -177,3 +177,22 @@ Week 1 - Gradient descent
 - The intuition behind the Gradient Descent algorithm
 - How Gradient Descent works (not mathematically)
 - Its interesting properties (local minimums)
+
+
+
+
+
+# 2026-08-19
+
+## I was learning
+
+Andrew Ng - Machine Learning Specialization
+Supervised Machine Learning: Regression and Classification
+Week 1 - Implementing gradient descent
+
+## I understood
+
+- Algorithm of Gradient Descent mathematically
+- Learning rate $\alpha$ and derivatives
+- Correct & Incorrect Gradient Descent
+- Incorrect implementation is different algorithm with different properties
